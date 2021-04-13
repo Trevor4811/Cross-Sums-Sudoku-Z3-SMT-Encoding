@@ -1,5 +1,6 @@
 # Cross-Sums-Sudoku-Z3-SMT-Encoding
 
+## Cross-Sum Sudoku:
 
 ## Steps to Install:
 - Install [Python](https://www.python.org/downloads/release/python-394/)
@@ -11,10 +12,10 @@
   - Then in same window click manage with pip
   - Use pip to install the “z3-solver”
 
-## Using CrossSumSudoku
+## Using CrossSumSudoku:
 
 
 
-## Using FormCrossSum
+## Using FormCrossSum:
 
 
