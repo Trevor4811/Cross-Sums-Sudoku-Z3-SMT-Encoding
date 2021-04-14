@@ -2,6 +2,8 @@
 
 ## Cross-Sum Sudoku:
 
+*Add overview of cross-sum sudoku*
+
 ## Steps to Install:
 - Install [Python](https://www.python.org/downloads/release/python-394/)
 - Install [Eclipse IDE](https://www.eclipse.org/downloads/packages/)
@@ -14,8 +16,9 @@
 
 ## Using CrossSumSudoku:
 
+*Need to explain how to use here.*
 
 
 ## Using FormCrossSum:
 
-
+*Need to explain how to use here.*
