@@ -2,7 +2,7 @@
 
 ## Cross-Sum Sudoku:
 
-*Add overview of cross-sum sudoku*
+Cross-Sum Sudoku is a game that combines the ruleset of Sudoku and Cross-Sum Kakuro. Effectively what this means is that numbers must be fit into a 9x9 grid such that each 3x3 section contains the numbers 1-9 exactly once each, each row contains numbers 1-9 once each, and each column must contain the numbers 1-9 exactly once each. In addition to this, each row and column of each smaller 3x3 grid is assigned a sum, the three numbers which make up that column or row must add up to that given sum. Due to the nature of this variation, no numbers are placed in the 9x9 grid to start with like normal Sudoku, the only clues provided are the sums of each row and column.
 
 ## Steps to Install:
 - Install [Python](https://www.python.org/downloads/release/python-394/)
@@ -11,14 +11,57 @@
 - In the PyDev workspace of Eclipse go to windows > Preferences > PyDev > Interpreters > Python Interpreters
   - Click New and add your previous Python install as an interpreter.
   - Apply
-  - Then in same window click manage with pip
+  - Then in the same window click manage with pip
   - Use pip to install the “z3-solver”
 
 ## Using CrossSumSudoku:
 
-*Need to explain how to use here.*
+The CrossSumSudoku module contains one function that takes in the horizontal and vertical cross sums of a puzzle in the form of two arrays as seen in the example below, returns an array of the Suduko answer or a string that there was "No solution found"
 
+```Python
+import CrossSumSudoku
+
+Solution = CrossSumSudoku.CrossSumSudoku(
+    [[19, 12, 14, 19, 9, 17, 17, 14, 14],
+     [6, 17, 22, 13, 15, 17, 16, 16, 13],
+     [20, 16, 9, 13, 21, 11, 12, 15, 18]],
+    [[15, 9, 21],
+     [12, 19, 14],
+     [18, 17, 10],
+     [13, 19, 13],
+     [18, 11, 16],
+     [14, 15, 16],
+     [16, 14, 15],
+     [10, 17, 18],
+     [19, 14, 12]])
+```
 
 ## Using FormCrossSum:
 
-*Need to explain how to use here.*
+The FormCrossSum module contains two functions that both take in a completed standard sudoku board in the form of an array with Horizontal returning the horizontal cross sum array for the given board and Vertical returning the vertical cross sum array for the given board, as seen in the examples below.
+
+```Python
+import FormCrossSum
+
+Horizontal = FormCrossSum.Horizontal(
+    [[6, 2, 7, 5, 3, 1, 9, 8, 4], 
+     [8, 1, 3, 6, 4, 9, 2, 5, 7], 
+     [5, 9, 4, 8, 2, 7, 6, 1, 3], 
+     [1, 7, 5, 4, 9, 6, 8, 3, 2], 
+     [3, 6, 9, 2, 1, 8, 7, 4, 5], 
+     [2, 4, 8, 7, 5, 3, 1, 9, 6], 
+     [7, 3, 6, 1, 8, 5, 4, 2, 9], 
+     [4, 5, 1, 9, 6, 2, 3, 7, 8], 
+     [9, 8, 2, 3, 7, 4, 5, 6, 1]])
+            
+Vertical = FormCrossSum.Vertical( 
+    [[6, 2, 7, 5, 3, 1, 9, 8, 4], 
+     [8, 1, 3, 6, 4, 9, 2, 5, 7], 
+     [5, 9, 4, 8, 2, 7, 6, 1, 3], 
+     [1, 7, 5, 4, 9, 6, 8, 3, 2], 
+     [3, 6, 9, 2, 1, 8, 7, 4, 5], 
+     [2, 4, 8, 7, 5, 3, 1, 9, 6], 
+     [7, 3, 6, 1, 8, 5, 4, 2, 9], 
+     [4, 5, 1, 9, 6, 2, 3, 7, 8], 
+     [9, 8, 2, 3, 7, 4, 5, 6, 1]])
+```
