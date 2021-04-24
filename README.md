@@ -16,7 +16,7 @@ Cross-Sum Sudoku is a game that combines the ruleset of Sudoku and Cross-Sum Kak
 
 ## Using CrossSumSudoku:
 
-The CrossSumSudoku module contains one function that takes in the horizontal and vertical cross sums of a puzzle in the form of two arrays as seen in the example below, returns an array of the Suduko answer or a string that there was "No solution found"
+The CrossSumSudoku module contains one function that takes in the horizontal and vertical cross sums of a puzzle in the form of two arrays as seen in the example below, and returns an array of the Suduko answer or a string that there was "No solution found"
 
 ```Python
 import CrossSumSudoku
@@ -38,7 +38,7 @@ Solution = CrossSumSudoku.CrossSumSudoku(
 
 ## Using FormCrossSum:
 
-The FormCrossSum module contains two functions that both take in a completed standard sudoku board in the form of an array with Horizontal returning the horizontal cross sum array for the given board and Vertical returning the vertical cross sum array for the given board, as seen in the examples below.
+The FormCrossSum module contains two functions that both take in a completed standard sudoku board in the form of an array with the Horizontal function returning the horizontal cross sum array for the given board and Vertical function returning the vertical cross sum array for the given board, as seen in the examples below.
 
 ```Python
 import FormCrossSum
