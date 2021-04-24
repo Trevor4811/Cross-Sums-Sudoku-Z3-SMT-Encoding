@@ -2,8 +2,8 @@
 
 ## Cross-Sum Sudoku:
 
-Cross-Sum Sudoku is a game that combines the ruleset of Sudoku and Cross-Sum Kakuro. Effectively what this means is that numbers must be fit into a 9x9 grid such that each 3x3 section contains the numbers 1-9 exactly once each, each row contains numbers 1-9 once each, and each column must contain the numbers 1-9 exactly once each. In addition to this, each row and column of each smaller 3x3 grid is assigned a sum, the three numbers which make up that column or row must add up to that given sum. Due to the nature of this variation, no numbers are placed in the 9x9 grid to start with like normal Sudoku, the only clues provided are the sums of each row and column.
-
+Cross-Sum Sudoku is a game that combines the ruleset of Sudoku and Cross-Sum Kakuro. What this means is that numbers must fit into a 9x9 grid such that each 3x3 section contains the numbers 1-9 exactly once, each row contains numbers 1-9 exactly once, and each column must contain the numbers 1-9 exactly once. Also, each row and column of each smaller 3x3 grid has an assigned sum that the three numbers which make up that column or row must add up to. Due to the nature of this variation, there are no numbers placed in the 9x9 grid at the start as with normal Sudoku; the only clues provided are the sums of each row and column.
+  
 ## Steps to Install:
 - Install [Python](https://www.python.org/downloads/release/python-394/)
 - Install [Eclipse IDE](https://www.eclipse.org/downloads/packages/)
