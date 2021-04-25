@@ -65,3 +65,7 @@ Vertical = FormCrossSum.Vertical(
      [4, 5, 1, 9, 6, 2, 3, 7, 8], 
      [9, 8, 2, 3, 7, 4, 5, 6, 1]])
 ```
+
+## Using FormCrossSum:
+
+The Examples module can be run to test both the CrossSumSudoku and FormCrossSum modules. The ExamplesOutput text file is an output from running the FormCrossSum file. It is important to note that if a given set of cross sums has multiple solutions, this solver may produce different but still correct solutions.
